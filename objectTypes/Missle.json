@@ -1,0 +1,90 @@
+{
+	"name": "Missle",
+	"plugin-id": "Sprite",
+	"sid": 106630245861383,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 143161090980809
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 614,
+						"height": 114,
+						"originX": 0.501628664495114,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5605408,
+						"collisionPoly": {
+							"points": [
+								0.9869706840390879,
+								0.5526315789473685,
+								0.6465798045602607,
+								0.9385964912280704,
+								0.38676328379478825,
+								0.9041180527001097,
+								0.36602465104590776,
+								0.5894443445038375,
+								0.3644242177957042,
+								0.08496843304550439,
+								0.6465798045602607,
+								0.06140350877192982
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 614,
+						"height": 114,
+						"originX": 0.501628664495114,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3717403,
+						"collisionPoly": {
+							"points": [
+								0.9869706840390879,
+								0.5526315789473685,
+								0.6465798045602607,
+								0.9385964912280704,
+								0.37990010910779726,
+								0.7366579290021927,
+								0.3708810216052526,
+								0.11368600945723696,
+								0.6465798045602607,
+								0.06140350877192982
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 755856106354013,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			}
+		],
+		"subfolders": []
+	}
+}

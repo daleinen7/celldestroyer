@@ -1,0 +1,10 @@
+{
+	"name": "PauseMenu",
+	"plugin-id": "Text",
+	"sid": 890512908613769,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

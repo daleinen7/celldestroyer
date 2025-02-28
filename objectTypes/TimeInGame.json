@@ -1,0 +1,10 @@
+{
+	"name": "TimeInGame",
+	"plugin-id": "Text",
+	"sid": 613257950998869,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

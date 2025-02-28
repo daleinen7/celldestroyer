@@ -1,0 +1,10 @@
+{
+	"name": "MoneyText",
+	"plugin-id": "Text",
+	"sid": 639988456277847,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

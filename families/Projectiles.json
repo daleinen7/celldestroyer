@@ -1,0 +1,22 @@
+{
+	"name": "Projectiles",
+	"plugin-id": "Sprite",
+	"sid": 745785600530529,
+	"instanceVariables": [
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 333780018492015
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"EnemyProjectile",
+		"Missle",
+		"Projectile",
+		"LightningRocket"
+	]
+}

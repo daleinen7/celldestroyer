@@ -1,0 +1,11 @@
+{
+	"name": "Pickup",
+	"plugin-id": "Sprite",
+	"sid": 809326202010920,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Repair_Kit"
+	]
+}

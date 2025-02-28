@@ -1,0 +1,110 @@
+{
+	"name": "EnemyProjectile",
+	"plugin-id": "Sprite",
+	"sid": 434594390484854,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 138093271144954
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 105,
+						"height": 47,
+						"originX": 0.6190476190476191,
+						"originY": 0.48936170212765956,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 598714,
+						"collisionPoly": {
+							"points": [
+								0.9809523809523809,
+								0.5531914893617034,
+								0.6666666666666667,
+								0.9787234042553179,
+								0.5508184523809523,
+								0.5193650265957446,
+								0.6857142857142857,
+								0.02127659574468085
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 105,
+						"height": 47,
+						"originX": 0.6190476190476191,
+						"originY": 0.48936170212765956,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7313563,
+						"collisionPoly": {
+							"points": [
+								0.9809523809523809,
+								0.5531914893617034,
+								0.6666666666666667,
+								0.9787234042553179,
+								0.5704241071428571,
+								0.4712433510638298,
+								0.6857142857142857,
+								0.02127659574468085
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 105,
+						"height": 47,
+						"originX": 0.6190476190476191,
+						"originY": 0.48936170212765956,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3091932,
+						"collisionPoly": {
+							"points": [
+								0.9809523809523809,
+								0.5531914893617034,
+								0.6666666666666667,
+								0.9787234042553179,
+								0.5599702380952383,
+								0.5078124999999999,
+								0.6857142857142857,
+								0.02127659574468085
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 748725933264527,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,162 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 499877342641635,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 134098175966183
+		},
+		{
+			"name": "M1Damage",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 148120727346676
+		},
+		{
+			"name": "M2Damage",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 106031494429855
+		},
+		{
+			"name": "MaxSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 953757205515863
+		},
+		{
+			"name": "Acceleration",
+			"type": "number",
+			"desc": "How quickly max speed is reached",
+			"show": true,
+			"sid": 854773910742484
+		},
+		{
+			"name": "Deceleration",
+			"type": "number",
+			"desc": "How quick ship stops",
+			"show": true,
+			"sid": 332764274388726
+		},
+		{
+			"name": "RotationSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 506920144160806
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "Current Speed",
+			"show": true,
+			"sid": 774414800338003
+		},
+		{
+			"name": "TargetAngle",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 210325099780676
+		},
+		{
+			"name": "DeltaAngle",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 209259163651733
+		},
+		{
+			"name": "Fuel",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 793411891650082
+		},
+		{
+			"name": "FuelUsageRate",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 558420155291834
+		},
+		{
+			"name": "m1Active",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 124271470290020
+		},
+		{
+			"name": "m2Active",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 425498212380158
+		},
+		{
+			"name": "rActive",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 802721059977702
+		},
+		{
+			"name": "shiftActive",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 479624854517837
+		},
+		{
+			"name": "CellScavenger",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 328388618895692
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo2",
+			"sid": 550792654986401
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 502251093790614
+		},
+		{
+			"behaviorId": "custom",
+			"name": "Custom",
+			"sid": 951442046223842
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 305768785489907
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 361486497328057
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 747855383044072
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"TestPlayer"
+	]
+}

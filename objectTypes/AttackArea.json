@@ -1,0 +1,52 @@
+{
+	"name": "AttackArea",
+	"plugin-id": "Sprite",
+	"sid": 964578313965000,
+	"isGlobal": true,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 231,
+						"height": 223,
+						"originX": 0.5194805194805194,
+						"originY": 0.5605381165919282,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5157860,
+						"collisionPoly": {
+							"points": [
+								0.8874458874458875,
+								0.03139013452914798,
+								0.961038961038961,
+								0.8834080717488789,
+								0.1774891774891776,
+								0.9596412556053812,
+								0.01298701298701311,
+								0.16143497757847533
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 310578092144481,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

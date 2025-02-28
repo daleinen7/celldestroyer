@@ -1,0 +1,56 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 636269018602792,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 242065940830891
+		},
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 914682034272804
+		},
+		{
+			"name": "DistanceToPlayer",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 681520143974735
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 968178482261081
+		},
+		{
+			"name": "MoneyReward",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 316239695512716
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer2",
+			"sid": 359389764457143
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"SniperCell",
+		"Bomber",
+		"Chomper",
+		"Boxer"
+	]
+}

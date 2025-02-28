@@ -1,0 +1,10 @@
+{
+	"name": "Health",
+	"plugin-id": "Text",
+	"sid": 328612555058394,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
