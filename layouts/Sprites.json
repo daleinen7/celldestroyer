@@ -752,6 +752,71 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Gigachompicus",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"sid": 477275874098020,
+					"tags": "",
+					"instanceVariables": {
+						"Health": 40,
+						"Damage": 20,
+						"DistanceToPlayer": 800,
+						"Speed": 50,
+						"MoneyReward": 1
+					},
+					"behaviors": {
+						"Timer2": {
+							"properties": {}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"direct-movement": "to-destination",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 477275874098020,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 216.50820901048328,
+						"y": 634.5202326945539,
+						"width": 290.7784574205537,
+						"height": 224.4417492735044,
+						"originX": 0.5010537407797682,
+						"originY": 0.5020477815699659,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.162172923752568,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 672050463533771,

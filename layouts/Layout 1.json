@@ -1416,46 +1416,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Gigachompicus",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 72,
-					"sid": 598238547793403,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 598238547793403,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 4729,
-						"y": 2387,
-						"width": 151.26090201447198,
-						"height": 116.75301446322527,
-						"originX": 0.5010537407797682,
-						"originY": 0.5020477815699659,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.162172923752568,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 347661665856446,

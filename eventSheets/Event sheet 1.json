@@ -3812,9 +3812,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 478808590632976,
+									"sid": 222350833172901,
 									"parameters": {
-										"interval-seconds": "1"
+										"interval-seconds": "3"
 									}
 								}
 							],
@@ -4138,6 +4138,349 @@
 						}
 					],
 					"sid": 904729505592786
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Gigachompicus",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 347087676464247
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 617491261945208,
+									"parameters": {
+										"object-to-create": "Gigachompicus",
+										"layer": "\"Main\"",
+										"x": "4445",
+										"y": "2296",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 499896301991455
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "Gigachompicus",
+									"sid": 214750044182835
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Gigachompicus",
+									"sid": 786242466572169,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "TestPlayer.X",
+										"y": "TestPlayer.Y"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Gigachompicus",
+									"sid": 702779182151933,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"speed": "Gigachompicus.Speed"
+									}
+								}
+							],
+							"sid": 763285277348750
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 674334710643600,
+									"parameters": {
+										"interval-seconds": "0.5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Gigachompicus",
+									"sid": 224949978883268,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "TestPlayer.X",
+										"y": "TestPlayer.Y"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Gigachompicus",
+									"sid": 130869233022773,
+									"parameters": {
+										"instance-variable": "DistanceToPlayer",
+										"value": "distance(Gigachompicus.X, Gigachompicus.Y, Player.X,Player.Y)"
+									}
+								}
+							],
+							"sid": 427304736825474
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "Gigachompicus",
+									"sid": 919404035229520,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"actions": [
+								{
+									"id": "move-along-path",
+									"objectClass": "Gigachompicus",
+									"sid": 852367571984647,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 204103705640104
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 728230781961227,
+									"parameters": {
+										"interval-seconds": "0.1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 107116254681426,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 461306447007350,
+											"parameters": {
+												"object": "Gigachompicus"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Gigachompicus",
+											"sid": 222134482357074,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "Gigachompicus",
+											"sid": 914781316585198,
+											"parameters": {
+												"animation": "\"Death\""
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Gigachompicus",
+											"sid": 302301964721294,
+											"parameters": {
+												"instance-variable": "DistanceToPlayer",
+												"comparison": 2,
+												"value": "200"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 349827572810325
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Gigachompicus",
+											"sid": 439048273962666,
+											"parameters": {
+												"animation": "\"Attack\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 207835590159876
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 688031746063761,
+											"parameters": {
+												"object": "Gigachompicus"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "Gigachompicus",
+											"sid": 861736124762603,
+											"parameters": {
+												"animation": "\"Death\""
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Gigachompicus",
+											"sid": 731951822639889,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Gigachompicus",
+											"sid": 106691645963083,
+											"parameters": {
+												"instance-variable": "DistanceToPlayer",
+												"comparison": 5,
+												"value": "200"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 332814003854063
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Gigachompicus",
+											"sid": 433501128575409,
+											"parameters": {
+												"animation": "\"Default\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 481168971006890
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 883502999445783,
+									"parameters": {
+										"object": "Gigachompicus"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "TakeDamage",
+									"sid": 336692359585734,
+									"parameters": [
+										"Chomper.Damage"
+									]
+								}
+							],
+							"sid": 711032593407231
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Gigachompicus",
+									"sid": 226043804540865,
+									"parameters": {
+										"object": "ElecticRocketExplosion"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Gigachompicus",
+									"sid": 234829335365564,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"speed": "0"
+									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "Gigachompicus",
+									"sid": 814116436421602,
+									"behaviorType": "Timer2",
+									"parameters": {
+										"duration": "1.0",
+										"type": "once",
+										"tag": "\"LectricRocketResume\""
+									}
+								}
+							],
+							"sid": 814081609368894
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-timer",
+									"objectClass": "Gigachompicus",
+									"sid": 537946452959561,
+									"behaviorType": "Timer2",
+									"parameters": {
+										"tag": "\"LectricRocketResume\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Gigachompicus",
+									"sid": 577410590805090,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"speed": "Gigachompicus.Speed"
+									}
+								}
+							],
+							"sid": 255916080245585
+						}
+					],
+					"sid": 697576087810963
 				}
 			],
 			"sid": 884763343414211
