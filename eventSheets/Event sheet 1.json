@@ -2457,6 +2457,30 @@
 								}
 							],
 							"sid": 620485862764268
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Gigachompicus",
+									"sid": 214956743973996,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop",
+									"objectClass": "Gigachompicus",
+									"sid": 579993558073083,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 230048627787790
 						}
 					]
 				},
@@ -4168,6 +4192,33 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 500784758401933,
+									"parameters": {
+										"object-to-create": "Gigavuln",
+										"layer": "\"Main\"",
+										"x": "Gigachompicus.ImagePointX(\"vuln\")",
+										"y": "Gigachompicus.ImagePointY(\"vuln\")",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "Gigavuln",
+									"sid": 751480979801532,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "Gigachompicus",
+										"image-point": "1",
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
 								}
 							],
 							"sid": 499896301991455
@@ -4478,6 +4529,223 @@
 								}
 							],
 							"sid": 255916080245585
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Projectiles",
+									"sid": 603627355925714,
+									"parameters": {
+										"object": "Gigavuln"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Gigachompicus",
+									"sid": 606207312620607,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "Gigachompicus.Health - Projectile.Damage"
+									}
+								}
+							],
+							"sid": 583162377696887,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Gigachompicus",
+											"sid": 388729684492578,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "stop",
+											"objectClass": "Gigachompicus",
+											"sid": 879850171700675,
+											"behaviorType": "Pathfinding"
+										}
+									],
+									"sid": 547710064248498
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-screen",
+									"objectClass": "Gigachompicus",
+									"sid": 409343524237155
+								}
+							],
+							"actions": [],
+							"sid": 755646240112310,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 446276752044959,
+											"parameters": {
+												"interval-seconds": "7"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 499670407024987,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 260408152080607,
+											"parameters": {
+												"seconds": "0.35",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 166293827612324,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 896074585329957,
+											"parameters": {
+												"seconds": "0.35",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 673480264248538,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 559308493146117,
+											"parameters": {
+												"seconds": "0.35",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 652209671019204,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 675264086707402,
+											"parameters": {
+												"seconds": "0.35",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 247980959489498,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 260789309827775,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 678534847979263,
+											"parameters": {
+												"seconds": "0.35",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 658712979733065,
+											"parameters": {
+												"object-to-create": "Chomper",
+												"layer": "\"Main\"",
+												"x": "Gigachompicus.ImagePointX(\"vuln\")",
+												"y": "Gigachompicus.ImagePointY(\"vuln\")",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 273124730763655
+								}
+							]
 						}
 					],
 					"sid": 697576087810963

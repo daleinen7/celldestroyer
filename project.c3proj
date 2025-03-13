@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 42800,
+	"savedWithRelease": 43000,
 	"name": "Cell Destroyer",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -73,6 +73,13 @@
 			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -165,7 +172,8 @@
 			"potentialToolPlace",
 			"SantoroTxt",
 			"Boxer",
-			"Gigachompicus"
+			"Gigachompicus",
+			"Gigavuln"
 		],
 		"subfolders": []
 	},
