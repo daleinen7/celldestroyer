@@ -828,7 +828,9 @@
 					"sid": 397023843590393,
 					"tags": "",
 					"instanceVariables": {
-						"equipementID": 1
+						"equipementID": 1,
+						"level": 1,
+						"price": 100
 					},
 					"behaviors": {},
 					"instanceFolderItem": {

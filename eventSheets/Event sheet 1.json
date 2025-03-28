@@ -173,6 +173,15 @@
 								"instance-variable": "equipementID",
 								"value": "choose(1,2,3)"
 							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "MysteryBox",
+							"sid": 504308223786061,
+							"parameters": {
+								"instance-variable": "price",
+								"value": "15"
+							}
 						}
 					],
 					"sid": 471520806758654
@@ -1455,6 +1464,16 @@
 							"parameters": {
 								"object": "MysteryBox"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 877906246983999,
+							"parameters": {
+								"variable": "Money",
+								"comparison": 5,
+								"value": "MysteryBox.price"
+							}
 						}
 					],
 					"actions": [
@@ -1478,6 +1497,23 @@
 							"id": "destroy",
 							"objectClass": "MysteryBox",
 							"sid": 792060499454527
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 977382081133875,
+							"parameters": {
+								"variable": "Money",
+								"value": "Money - MysteryBox.price"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "MoneyText",
+							"sid": 870075809680356,
+							"parameters": {
+								"text": "\"Money: $\" & Money "
+							}
 						}
 					],
 					"sid": 259105855280055
