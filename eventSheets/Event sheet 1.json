@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Money",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "300000",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1246,6 +1246,27 @@
 					"children": [
 						{
 							"eventType": "comment",
+							"text": "Cell Scavenger"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 902796919451463,
+									"parameters": {
+										"variable": "equipmentID",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 375342553815693
+						},
+						{
+							"eventType": "comment",
 							"text": "Feather"
 						},
 						{
@@ -2316,6 +2337,10 @@
 							"sid": 176857720025219
 						},
 						{
+							"eventType": "comment",
+							"text": "Cell Destroyer Drop"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -2339,11 +2364,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 427638502988678,
+									"sid": 620137040403381,
 									"parameters": {
-										"first-value": "choose(0, 1, 2, 3, 4)",
-										"comparison": 0,
-										"second-value": "0"
+										"first-value": "random(1,101)",
+										"comparison": 2,
+										"second-value": "(5 * Equipment.At(Equipment.IndexOf(1), 1)) + 3"
 									}
 								}
 							],
