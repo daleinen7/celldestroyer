@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Money",
 			"type": "number",
-			"initialValue": "300000",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -125,6 +125,78 @@
 						"height": "2",
 						"depth": "1"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 281631042710896,
+					"parameters": {
+						"instance-variable": "Acceleration",
+						"value": "400"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 812846121191067,
+					"parameters": {
+						"instance-variable": "Deceleration",
+						"value": "200"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 396328042880525,
+					"parameters": {
+						"instance-variable": "FuelUsageRate",
+						"value": "0.01"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 708100937069176,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 153018594719316,
+					"parameters": {
+						"instance-variable": "M1Damage",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 283626286625687,
+					"parameters": {
+						"instance-variable": "M2Damage",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 274514941597247,
+					"parameters": {
+						"instance-variable": "MaxSpeed",
+						"value": "300"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 701665756898598,
+					"parameters": {
+						"instance-variable": "CellScavenger",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 364345092834338,
@@ -181,6 +253,19 @@
 							"parameters": {
 								"instance-variable": "price",
 								"value": "15"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 380625762143124,
+							"parameters": {
+								"object-to-create": "BoxTop",
+								"layer": "\"Main\"",
+								"x": "MysteryBox.X -7",
+								"y": "MysteryBox.Y -2",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						}
 					],
@@ -1495,6 +1580,14 @@
 								"comparison": 5,
 								"value": "MysteryBox.price"
 							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "BoxTop",
+							"sid": 669046858640058,
+							"parameters": {
+								"object": "MysteryBox"
+							}
 						}
 					],
 					"actions": [
@@ -1515,9 +1608,12 @@
 							]
 						},
 						{
-							"id": "destroy",
-							"objectClass": "MysteryBox",
-							"sid": 792060499454527
+							"id": "set-animation-speed",
+							"objectClass": "BoxTop",
+							"sid": 561281229849023,
+							"parameters": {
+								"speed": "9"
+							}
 						},
 						{
 							"id": "set-eventvar-value",
@@ -1535,6 +1631,25 @@
 							"parameters": {
 								"text": "\"Money: $\" & Money "
 							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 203065452125003,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "MysteryBox",
+							"sid": 156177036713539
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BoxTop",
+							"sid": 965669777958906
 						}
 					],
 					"sid": 259105855280055
