@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Money",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "15",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -266,6 +266,27 @@
 								"y": "MysteryBox.Y -2",
 								"create-hierarchy": false,
 								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 620308351744831,
+							"parameters": {
+								"object-to-create": "BoxPrice",
+								"layer": "\"Main\"",
+								"x": "MysteryBox.X",
+								"y": "MysteryBox.Y - 30",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "BoxPrice",
+							"sid": 780065802822142,
+							"parameters": {
+								"text": "15"
 							}
 						}
 					],
@@ -1588,6 +1609,16 @@
 							"parameters": {
 								"object": "MysteryBox"
 							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BoxPrice",
+							"sid": 962455169602145,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "MysteryBox.id"
+							}
 						}
 					],
 					"actions": [
@@ -1606,6 +1637,54 @@
 							"parameters": [
 								"MysteryBox.equipementID"
 							]
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 839512996877580,
+							"parameters": {
+								"object-to-create": "PowerUps",
+								"layer": "\"Main\"",
+								"x": "MysteryBox.X",
+								"y": "MysteryBox.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PowerUps",
+							"sid": 701386300960148,
+							"parameters": {
+								"frame-number": "MysteryBox.equipementID"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PowerUps",
+							"sid": 936549581573499,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "PowerUps",
+							"sid": 213431994319062,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "270"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "PowerUps",
+							"sid": 420058129657205,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"acceleration": "-800"
+							}
 						},
 						{
 							"id": "set-animation-speed",
@@ -1650,6 +1729,16 @@
 							"id": "destroy",
 							"objectClass": "BoxTop",
 							"sid": 965669777958906
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PowerUps",
+							"sid": 323327313541926
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BoxPrice",
+							"sid": 855371787484408
 						}
 					],
 					"sid": 259105855280055

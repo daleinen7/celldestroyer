@@ -190,7 +190,8 @@
 					"instanceVariables": {
 						"equipementID": 1,
 						"level": 1,
-						"price": 100
+						"price": 100,
+						"id": 0
 					},
 					"behaviors": {
 						"Pin": {
@@ -703,6 +704,61 @@
 						"height": 12.97626095699862,
 						"originX": 0.35655737704918034,
 						"originY": 0.9241379310344827,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BoxPrice",
+					"properties": {
+						"text": "15",
+						"enable-bbcode": true,
+						"font": "SantoroScript3-Regular",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 75,
+					"sid": 290431367274842,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 290431367274842,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2556.2593855899795,
+						"y": 2774.752044130933,
+						"width": 95.01162520370553,
+						"height": 12.754589309560743,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

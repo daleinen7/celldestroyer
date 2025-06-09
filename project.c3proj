@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43700,
+	"savedWithRelease": 44202,
 	"name": "Cell Destroyer",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -174,7 +174,8 @@
 			"Boxer",
 			"Gigachompicus",
 			"Gigavuln",
-			"BoxTop"
+			"BoxTop",
+			"BoxPrice"
 		],
 		"subfolders": []
 	},
